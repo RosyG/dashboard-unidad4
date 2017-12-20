@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="css/students.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <select id="sede">
+        <option selected disabled hidden>Sede-Generación</option>
+        <optgroup class="sede" label="AREQUIPA">
+            <option class="generation">2015-1</option>
+            <option class="generation">2015-2</option>
+            <option class="generation">2016-1</option>
+            <option class="generation">2016-2</option>
+            <option class="generation">2017-1</option>
+            <option class="generation">2017-2</option>
+        </optgroup>
+        <optgroup class="sede" label="CDMX">
+          <option class="generation">2015-1</option>
+          <option class="generation">2015-2</option>
+          <option class="generation">2016-1</option>
+          <option class="generation">2016-2</option>
+          <option class="generation">2017-1</option>
+          <option class="generation">2017-2</option>
+        </optgroup>
+        <optgroup class="sede" label="LIMA">
+          <option class="generation">2015-1</option>
+          <option class="generation">2015-2</option>
+          <option class="generation">2016-1</option>
+          <option class="generation">2016-2</option>
+          <option class="generation">2017-1</option>
+          <option class="generation">2017-2</option>
+        </optgroup>
+        <optgroup class="sede" label="SANTIAGO DE CHILE">
+          <option class="generation">2015-1</option>
+          <option class="generation">2015-2</option>
+          <option class="generation">2016-1</option>
+          <option class="generation">2016-2</option>
+          <option class="generation">2017-1</option>
+          <option class="generation">2017-2</option>
+        </optgroup>
+      </select>
+      <select id="sprint">
+        <option selected disabled hidden>Sprint</option>
+        <option class="sprint">1</option>
+        <option class="sprint">2</option>
+        <option class="sprint">3</option>
+        <option class="sprint">4</option>
+      </select>
+      <section id="floating">
+          <img id="logo" src="assets/images/l.png" alt="">
+          <select ondblclick="location = this.value;" id="log" >
+            <option selected disabled hidden>Jonh</option>
+            <option value="profile.html">Perfil</option>
+            <option value="index.html">Cerrar sesión</option> <!--<select name="Enlaces" onchange="document.location.href:this.value;"> -->
+          </select>
+      </section>
+    </nav>
+    <section id="container-sub-menu">
+      <section id="floating-2">
+        <section id="iconos">
+          <a href="students.html"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+          <span>Estudiantes</span>
+          <a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+          <span>Profesores</span>
+          <a href="principal.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+          <span>Home</span>
+        </section>
+      </section>
+      <form id="searching" method="post">
+        <input type="text" placeholder="buscar">
+        <button type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+    </section>
+    <section id="container-students">
+    </section>
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+  </body>
+</html>
